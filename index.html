@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>নামতা</title>
+    <style>
+      table{
+        background-color: #cccccc;
+        
+      }
+      table tr:nth-child(odd){
+        background-color: #e7e7e7;
+      }
+      table tr:first-child td{
+        background-color: #000;
+        color: #fff;
+        font-weight: 500;
+      }
+      h2{
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>এক থেকে দশ এর নামতা</h2>
+    <script>
+      var tbl =document.getElementById("tbl");
+      for(var i = 1; i<=10; i++){
+        document.write("<table id='tbl' border='0' cellpadding='0' cellspacing='0' width='100' style='float:left; margin-right: 10px; margin-bottom: 10px; text-align:center;'><tr><td colspan='3'>"+i+" এর নামতা</td></tr>")
+        for(var j = 1; j<=10; j++){
+          var z = i*j;
+        document.write("<tr><td>"+i+" x "+j+"</td><td> = "+"</td><td>"+z+"</td></tr>");
+      }
+      document.write("</table>");
+      }
+    </script>
+  </body>
+</html>
